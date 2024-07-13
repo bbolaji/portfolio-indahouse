@@ -55,6 +55,19 @@ h2 {
     color: #555;
 }
 
+/* About Us Section */
+#about {
+    text-align: center;
+}
+
+.responsive-image {
+    width: 100%;
+    max-width: 600px; /* Maximum width for larger screens */
+    height: auto;
+    border: 2px solid #87CEEB; /* Cloud blue border */
+    border-radius: 8px;
+}
+
 /* Contact Us Section */
 #contact-us {
     display: flex;
@@ -135,6 +148,11 @@ h2 {
         width: 80px; /* Smaller image width on smaller screens */
         max-width: 100%; /* Ensure the images do not exceed the container width */
     }
+
+    .responsive-image {
+        max-width: 90%; /* Ensure the image fits within the container on smaller screens */
+        margin: 0 auto; /* Center the image */
+    }
 }
 
 @media (max-width: 480px) {
@@ -155,6 +173,11 @@ h2 {
     .gallery-images img {
         width: 60px; /* Further reduce image size for very small screens */
         max-width: 100%; /* Ensure the images do not exceed the container width */
+    }
+
+    .responsive-image {
+        max-width: 100%; /* Ensure the image fits within the container on very small screens */
+        margin: 0 auto; /* Center the image */
     }
 }
 
