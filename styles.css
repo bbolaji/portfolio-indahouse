@@ -19,6 +19,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap; /* Make the navbar items wrap on smaller screens */
 }
 
 nav ul li {
@@ -29,6 +30,7 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     padding: 10px;
+    display: block; /* Make links block-level for better touch targets */
 }
 
 nav ul li a:hover {
@@ -52,6 +54,8 @@ h1 {
 h2 {
     color: #555;
 }
+
+/* Contact Us Section */
 #contact-us {
     display: flex;
     justify-content: space-between;
@@ -99,7 +103,22 @@ h2 {
 .gallery-images img:hover {
     transform: scale(1.1); /* Optional: Slightly enlarge image on hover */
 }
+
+/* Responsive Styles */
 @media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack the navbar items vertically on smaller screens */
+    }
+
+    nav ul li {
+        text-align: center; /* Center align navbar items */
+    }
+
+    section {
+        margin: 5px;
+        padding: 10px;
+    }
+
     #contact-us {
         flex-direction: column;
     }
@@ -116,6 +135,23 @@ h2 {
         width: 80px; /* Smaller image width on smaller screens */
     }
 }
+
+@media (max-width: 480px) {
+    nav ul li a {
+        padding: 8px;
+    }
+
+    section {
+        margin: 2px;
+        padding: 5px;
+    }
+
+    footer {
+        padding: 5px;
+        font-size: 12px; /* Smaller text for footer */
+    }
+}
+
 /* Footer Styles */
 footer {
     background-color: #333;
