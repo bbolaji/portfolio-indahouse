@@ -133,6 +133,7 @@ h2 {
 
     .gallery-images img {
         width: 80px; /* Smaller image width on smaller screens */
+        max-width: 100%; /* Ensure the images do not exceed the container width */
     }
 }
 
@@ -149,6 +150,11 @@ h2 {
     footer {
         padding: 5px;
         font-size: 12px; /* Smaller text for footer */
+    }
+
+    .gallery-images img {
+        width: 60px; /* Further reduce image size for very small screens */
+        max-width: 100%; /* Ensure the images do not exceed the container width */
     }
 }
 
